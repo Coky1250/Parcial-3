@@ -1,0 +1,83 @@
+/* CSS para el login y register */
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: 90vh;
+    display: flex;
+    background-image: url(../img/fondo-monocromatico-blanco-estilo-papel_52683-66443.avif);
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#contenedorUno{
+    padding: 30px;
+    height: 30vh;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #b1b1b1;
+    border-radius: 5%;
+}
+
+#contenedorDos{
+    padding: 30px;
+    height: 40vh;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #b1b1b1;
+    border-radius: 5%;
+}
+
+h2,h5
+{ 
+    margin: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:  rgb(69, 94, 236);
+}
+
+label{
+    font-size: 100%;
+    font-weight: bold;
+}
+
+button{
+    position: absolute;
+    margin: 1%;
+    left:45%;
+    padding: 10px 25px;
+    border-radius: 6px;
+    background-color: rgb(69, 94, 236);
+    border-color:   rgb(69, 94, 236);
+    color: white;
+}
+
+#inputOne{
+    margin-left: 48px;
+}
+
+#inputTwo{
+    margin-left: 20px;
+}
+
+#inputThree{
+    margin-left: 117px;
+}
+
+#inputFour{
+    margin-left: 31px;
+}
+
+#inputFive{
+    margin-left: 22px;
+}
+#inputSix{
+    margin-left: 81px;
+}
+
