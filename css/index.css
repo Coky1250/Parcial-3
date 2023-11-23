@@ -4,23 +4,26 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
 body{
     margin: 0;
     padding: 0;
     width: auto;
+}
+
+.cuerpoFormulario{
     height: 90vh;
     display: flex;
-    background-image: url(../img/fondo-monocromatico-blanco-estilo-papel_52683-66443.avif);
-    background-size: cover;
     align-items: center;
     justify-content: center;
 
 }
 
+
 #contenedorUno{
     padding: 30px;
     height: 30vh;
-    background-color: rgb(255, 255, 255);
+    background-color: #e7dede;
     border: 1px solid #b1b1b1;
     border-radius: 5%;
 }
@@ -28,7 +31,7 @@ body{
 #contenedorDos{
     padding: 30px;
     height: 40vh;
-    background-color: rgb(255, 255, 255);
+    background-color: #e7dede;
     border: 1px solid #b1b1b1;
     border-radius: 5%;
 }
@@ -47,15 +50,43 @@ label{
     font-weight: bold;
 }
 
+#cajonTabla{
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+table{
+    
+}
+
 button{
-    position: absolute;
-    margin: 1%;
-    left:45%;
     padding: 10px 25px;
     border-radius: 6px;
     background-color: rgb(69, 94, 236);
     border-color:   rgb(69, 94, 236);
     color: white;
+}
+
+.botonesFormulario{
+    position: absolute;
+    margin: 1%;
+    left:45%;
+}
+
+#botonEntrada{
+    position: absolute;
+    margin: 1%;
+    left:85%;
+}
+
+#botonNota{
+    position: absolute;
+    left:3%;
 }
 
 #inputOne{

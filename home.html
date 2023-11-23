@@ -1,27 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página principal</title>
+    <style>
+        @import url(css/index.css);
+    </style>
 </head>
-<body>
-    
-<h3>APP DE NOTAS</h3>
-<button>Ingresar</button>
-<button>Nueva Nota</button>
-<table>
-    <thead>
-        <tr>
-            <td>TÍTULO</td>
-            <td>FECHA</td>
-            <td>ACCIONES</td>
-        </tr>
-    </thead>
-    <tbody>
-        
-    </tbody>
-</table>
 
+<body class="cuerpoHome">
+
+    <h2>APP DE NOTAS</h2>
+    <button id="botonEntrada">Ingresar</button><br>
+    <button id="botonNota">Nueva Nota</button><br>
+    <br>
+    <div id="cajonTabla">
+        <table>
+            <thead>
+                <tr>
+                    <td>TÍTULO</td>
+                    <td>FECHA</td>
+                    <td>ACCIONES</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>NOTA 1</td>
+                    <td>2/10/2003</td>
+                    <td>
+                        <button>Ver</button>
+                        <button>Editar</button>
+                        <button>Borrar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
+
 </html>
