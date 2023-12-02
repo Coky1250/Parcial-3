@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
+    <title>Borrar Nota</title>
+</head>
+
+<body class="cuerpoFormulario">
+
+    <h2>Borrar Nota</h2>
+
+    <div class="contenedorNota">
+        <label for="titulo" class="textosEmergentes">Título:</label>
+        <p id="titulo">Nota 1</p>
+
+        <label for="nota" class="textosEmergentes">Nota:</label>
+        <p id="nota">Contenido de la nota...</p>
+
+        <label for="fecha" class="textosEmergentes">Fecha:</label>
+        <p id="fecha">2/10/2003</p>
+    </div>
+
+    <div class="botonesFormulario">
+        <button class="botonTabla" id="botonConfirmarBorrar">Confirmar Borrar</button>
+        <button class="botonTabla" id="botonCancelarBorrar">Cancelar</button>
+    </div>
+
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>

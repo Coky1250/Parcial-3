@@ -1,0 +1,57 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página principal</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
+</head>
+
+<body class="cuerpoHome">
+
+    <h2>APP DE NOTAS</h2>
+    <form action="{% url 'pagina_login' %}" method="get">
+        <button id="botonEntrada" type="submit">Ingresar</button><br>
+    </form>
+    <form action="{% url 'crear_nota' %}" method="get">
+    <button id="botonNota">Nueva Nota</button>
+    </form>
+    <div id="cajonTabla">
+        <table>
+            <thead>
+                <tr>
+                    <td class="cabecera"> <label>TÍTULO</label></td>
+                    <td class="cabecera"><label>FECHA</label></td>
+                    <td class="cabecera"><label>ACCIONES</label></td>
+                </tr>
+            </thead>
+            <tbody>
+                {% for nota in notas %}
+                    <tr>
+                        <td>{{ nota.titulo }}</td>
+                        <td>{{ nota.fecha }}</td>
+                        <td>
+                            <form action="{% url 'pagina_ver' %}" method="get" class="formTable">
+                                <button class="botonTabla" id="botonVer">Ver</button>
+                            </form>
+                            <form action="{% url 'pagina_editar' %}" method="get" class="formTable">
+                                <button class="botonTabla" id="botonEditar">Editar</button>
+                            </form>
+                            <form action="{% url 'pagina_borrar' %}" method="get" class="formTable">
+                                <button class="botonTabla" id="botonBorrar">Borrar</button>
+                            </form>
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <script src="{% static 'js/index.js' %}"></script>
+
+</body>
+
+</html>
